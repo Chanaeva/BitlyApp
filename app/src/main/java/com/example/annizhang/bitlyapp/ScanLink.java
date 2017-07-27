@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.net.wifi.WifiConfiguration;
 import android.os.Build;
@@ -20,12 +21,16 @@ import android.support.v4.content.FileProvider;
 import android.util.Base64;
 
 import com.amazonaws.mobileconnectors.s3.transferutility.TransferState;
+import com.bumptech.glide.Glide;
 import com.google.gson.JsonObject;
 import com.google.gson.stream.JsonReader;
 import android.util.Log;
 import android.util.StringBuilderPrinter;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.amazonaws.auth.CognitoCachingCredentialsProvider;
@@ -87,6 +92,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONStringer;
 
+import static com.example.annizhang.bitlyapp.Constants.DEFAULT_FONT;
+
 
 /** ScanLink uses the device's camera app to take a picture,
     then that picture is saved to a file. The file is sent to
@@ -108,6 +115,7 @@ public class ScanLink extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_create_link);
         try {
             ctx = this.getApplicationContext();
             dispatchTakePictureIntent();
@@ -265,6 +273,8 @@ public class ScanLink extends Activity {
             connection.setAllowUserInteraction(false);
 
             if (json != null) {
+                //start spinning
+
                 //set the content length of the body
                 connection.setDoInput(true);
                 connection.setDoOutput(true);
@@ -363,6 +373,14 @@ public class ScanLink extends Activity {
     }
 
     public void dispatchTakePictureIntent() throws IOException{
+        setContentView(R.layout.activity_scan_progress);
+        ImageView p = (ImageView) findViewById(R.id.parrot);
+        Typeface typeface = Typeface.createFromAsset(this.getAssets(), DEFAULT_FONT);
+        TextView myTextView = (TextView) findViewById(R.id.progress_text);
+        myTextView.setTypeface(typeface);
+        Glide.with(this)
+                .load("https://railsgirlssummerofcode.org/img/blog/2016/l1ghtsab3r-partyparrot.gif")
+                .into(p);
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
             // Create the File where the photo should go

@@ -12,6 +12,7 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="button_fromImage">Scan Link!</string>
+    <string name="scanning_link">Scanning your snap...</string>
     <string name="subscription_key">c3045087ed7342bc84634a0bc16c58b0</string>
     <string name="api_endpoint">https://westcentralus.api.cognitive.microsoft.com/vision/v1.0/ocr</string>
 </resources>
