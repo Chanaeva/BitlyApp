@@ -35,19 +35,19 @@
 
                 <LinearLayout
                     android:id="@+id/create_link"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="367dp"
+                    android:layout_height="497dp"
                     android:orientation="vertical"
                     android:weightSum="1">
 
                     <Button
                         android:id="@+id/getFromImage"
                         style="@style/Widget.AppCompat.Button.Colored"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="16dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_width="249dp"
+                        android:layout_height="63dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
                         android:background="@color/colorAccent"
                         android:text="@string/button_fromImage"
                         android:visibility="visible"
@@ -103,6 +103,7 @@
                         android:background="@color/colorAccent"
                         android:text="@string/button_makelink"
                         android:visibility="visible"
+                        android:layout_gravity="center"
                         app:layout_constraintLeft_toLeftOf="@+id/button_addevent" />
 
                     <EditText
@@ -126,7 +127,7 @@
                         android:layout_marginLeft="16dp"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
-                        android:background="@android:color/holo_orange_light"
+                        android:background="@color/colorPrimaryDark"
                         android:text="Create Event"
                         android:visibility="invisible"
                         app:layout_constraintRight_toRightOf="@+id/button_makeLink" />
