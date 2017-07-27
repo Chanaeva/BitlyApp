@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         ACCESSCODE = "";
 
         Typeface typeface = Typeface.createFromAsset(this.getAssets(), DEFAULT_FONT);
-        TextView myTextView = (TextView) findViewById(R.id.textView);
+        TextView myTextView = (TextView) findViewById(R.id.textView2);
         myTextView.setTypeface(typeface);
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);

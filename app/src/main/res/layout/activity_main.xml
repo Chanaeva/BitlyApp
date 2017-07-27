@@ -4,29 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.annizhang.bitlyapp.MainActivity">
+    tools:context="com.example.annizhang.bitlyapp.MainActivity"
+    android:background="@color/colorPrimary">
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:layout_marginTop="50dp"
             android:layout_marginLeft="@dimen/standard_margin"
             android:layout_marginRight="@dimen/standard_margin"
             android:gravity="center_horizontal"
             android:orientation="vertical">
-
-        </RelativeLayout>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="71dp"
-        android:layout_height="18dp"
-        android:text="Sign In"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="16dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        </LinearLayout>
 
     <EditText
         android:id="@+id/editText1"
@@ -38,6 +29,7 @@
         android:ems="10"
         android:hint="@string/username"
         android:inputType="textPersonName"
+        android:textColorHint="@color/textBackground"
         app:layout_constraintBottom_toTopOf="@+id/editText2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -48,9 +40,11 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="100dp"
+        android:layout_marginBottom="50px"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
+        android:textColorHint="@color/textBackground"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -85,8 +79,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
+        android:layout_gravity="bottom"
         android:src="@drawable/chauncey"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
 
 </android.support.constraint.ConstraintLayout>
 
