@@ -1,8 +1,9 @@
-Android App using bitly api to create links, display links, and to view aggregate clicks over the last week.
+Android App using Bitly api, MS Azure and AWS to take a picture of a link, save a link as an event. 
 
-![alt tag](sampleImages/createLink.png)
-![alt tag](sampleImages/myLinks.png)
-![alt tag](sampleImages/myStats.png)
+![alt tag](sampleImages/landing.png)
+![alt tag](sampleImages/scanlink.png)
+![alt tag](sampleImages/scanlink2.png)
+![alt tag](sampleImages/event.png)
 
 Sign in to test account using
 
