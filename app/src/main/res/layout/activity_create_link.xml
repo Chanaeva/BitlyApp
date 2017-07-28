@@ -43,11 +43,12 @@
                     <Button
                         android:id="@+id/getFromImage"
                         style="@style/Widget.AppCompat.Button.Colored"
-                        android:layout_width="249dp"
-                        android:layout_height="63dp"
+                        android:layout_width="331dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
+                        android:layout_weight="0.00"
                         android:background="@color/colorAccent"
                         android:text="@string/button_fromImage"
                         android:visibility="visible"
@@ -95,15 +96,15 @@
                     <Button
                         android:id="@+id/button_makelink"
                         style="@style/Widget.AppCompat.Button.Colored"
-                        android:layout_width="152dp"
+                        android:layout_width="157dp"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="16dp"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
                         android:background="@color/colorAccent"
                         android:text="@string/button_makelink"
                         android:visibility="visible"
-                        android:layout_gravity="center"
                         app:layout_constraintLeft_toLeftOf="@+id/button_addevent" />
 
                     <EditText
