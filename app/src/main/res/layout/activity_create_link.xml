@@ -35,19 +35,20 @@
 
                 <LinearLayout
                     android:id="@+id/create_link"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="367dp"
+                    android:layout_height="497dp"
                     android:orientation="vertical"
                     android:weightSum="1">
 
                     <Button
                         android:id="@+id/getFromImage"
                         style="@style/Widget.AppCompat.Button.Colored"
-                        android:layout_width="match_parent"
+                        android:layout_width="331dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="16dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.00"
                         android:background="@color/colorAccent"
                         android:text="@string/button_fromImage"
                         android:visibility="visible"
@@ -95,8 +96,9 @@
                     <Button
                         android:id="@+id/button_makelink"
                         style="@style/Widget.AppCompat.Button.Colored"
-                        android:layout_width="152dp"
+                        android:layout_width="157dp"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="16dp"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
@@ -126,7 +128,7 @@
                         android:layout_marginLeft="16dp"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
-                        android:background="@android:color/holo_orange_light"
+                        android:background="@color/colorPrimaryDark"
                         android:text="Create Event"
                         android:visibility="invisible"
                         app:layout_constraintRight_toRightOf="@+id/button_makeLink" />

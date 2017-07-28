@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Snaply</string>
     <string name="edit_message">Enter a message</string>
-    <string name="button_send">Send</string>
+    <string name="button_send">Login</string>
     <string name="button_makelink">Shorten</string>
     <string name="long_link">Long URL</string>
     <string name="link_title">Title</string>
